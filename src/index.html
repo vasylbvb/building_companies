@@ -15,7 +15,7 @@
         <div class="global-header__firstline">
             <div class="container">
                 <div class="row">
-                    <div class="logo-box-container col-lg-4 col-md-4 col-sm-3 col-xs-6">
+                    <div class="logo-box-container col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <a href="#" class="logo-box"></a>
                     </div>
                     <div class="nav-socials-container col-lg-4 col-md-4 hidden-sm hidden-xs">
@@ -34,7 +34,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="nav-contacts-container col-lg-2 col-md-2 col-sm-5 col-xs-6">
+                    <div class="nav-contacts-container col-lg-2 col-md-2 col-sm-4 col-xs-10">
                         <ul class="nav-contacts">
                             <li class="nav-contacts__item">
                                 <a href="#" class="nav-contacts__about">Про нас</a>
@@ -44,19 +44,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="nav-search-container col-lg-2 col-md-2 col-sm-4 col-xs-10">
+                    <div class="nav-search-container inline col-lg-2 col-md-2 col-sm-4 col-xs-6">
                         <form action="#" class="nav-search-form">
-                            <button class="btn btn-default nav-search-form__btn-search"></button>
+                            <button class="btn btn-default nav-search-form__btn-search">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
                             <input type="search" class="form-control nav-search-form__input" placeholder="Пошук">
                         </form>
                     </div>
-                    <div class="hidden-lg hidden-md hidden-sm visible-xs-block col-xs-2">
+                    <div class="navbtn-box hidden-lg hidden-md hidden-sm visible-xs-block col-xs-2">
                         <button data-toggle="collapse" data-target="#main-nav" aria-expanded="false"
-                                class="navbar-toggle collapsed">
+                                class="navbtn navbar-toggle collapsed">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="icon-bar line1"></span>
+                            <span class="icon-bar line2"></span>
+                            <span class="icon-bar line3"></span>
                         </button>
                     </div>
                 </div>
@@ -90,7 +92,8 @@
                                             <a href="#" class="main-nav__link">Карта новобудов</a>
                                         </li>
                                     </ul>
-                                    <a href="#" class="btn btn-success navbar-btn navbar-right btn-we-checked">Перевірено
+                                    <a href="#" class="btn btn-success navbar-btn navbar-right btn-we-checked">
+                                        <span class="glyphicon glyphicon-ok"></span>Перевірено
                                         нами</a>
                                 </div>
                             </div>
@@ -103,9 +106,9 @@
     <section class="main-upperside">
         <div class="container">
             <p>
-                <span>Тут може бути ваша реклама</span>
                 <a href="#">
-                    <img src="http://placehold.it/1140x130" alt="adverising box 1">
+                    <img src="http://placehold.it/1140x130&text=Тут може бути ваша реклама 1140PXx130PX"
+                         alt="adverising box 1">
                 </a>
             </p>
         </div>
@@ -363,76 +366,39 @@
                                             <span class="publication__share-btn">
                                                 <ul class="share-btns">
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="publications-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                                <div class="thumbnail publication">
-                                    <img src="http://placehold.it/264x177" alt="publication1" class="publication__img">
-                                    <div class="label label-success publication__label">Публікації</div>
-                                    <div class="caption publication__caption">
-                                        <h3 class="publication__caption-header">На Прикарпатті продовжують видавати
-                                            &#34;теплі кредити&#34;</h3>
-                                        <div class="publication__description">
-                                            <span class="publication__description-wrapper">
-                                                <p>
-                                                    На офіційному веб-сайті Держенергоефективності запрацювала Інтерактивна карта міцевих програм відшкодування відсотків за &#171;теплими&#187;
-                                                </p>
-                                            </span>
-                                            <a href="#" class="publication__description-read-more"></a>
-                                        </div>
-                                        <div class="publication__footer">
-                                            <div class="publication__date">
-                                                25/06/2016 14:30
-                                            </div>
-                                            <div class="publication__comment">
-                                                <span>5</span>
-                                            </div>
-                                            <span class="publication__share-btn">
-                                                <ul class="share-btns">
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
-                                                    </li>
-                                                    <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </span>
@@ -465,25 +431,104 @@
                                             <span class="publication__share-btn">
                                                 <ul class="share-btns">
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
                                                     </li>
                                                     <li class="share-btns__item">
-                                                        <a href="#" class="share-btns__link"></a>
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="publications-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail publication">
+                                    <img src="http://placehold.it/264x177" alt="publication1" class="publication__img">
+                                    <div class="label label-success publication__label">Публікації</div>
+                                    <div class="caption publication__caption">
+                                        <h3 class="publication__caption-header">На Прикарпатті продовжують видавати
+                                            &#34;теплі кредити&#34;</h3>
+                                        <div class="publication__description">
+                                            <span class="publication__description-wrapper">
+                                                <p>
+                                                    На офіційному веб-сайті Держенергоефективності запрацювала Інтерактивна карта міцевих програм відшкодування відсотків за &#171;теплими&#187;
+                                                </p>
+                                            </span>
+                                            <a href="#" class="publication__description-read-more"></a>
+                                        </div>
+                                        <div class="publication__footer">
+                                            <div class="publication__date">
+                                                25/06/2016 14:30
+                                            </div>
+                                            <div class="publication__comment">
+                                                <span>5</span>
+                                            </div>
+                                            <span class="publication__share-btn">
+                                                <ul class="share-btns">
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </span>
@@ -494,17 +539,805 @@
                         </div>
                     </div>
                     <div class="sub-section checked-objects-container"></div>
-                    <div class="sub-section top5-container"></div>
-                    <div class="sub-section promotions-container"></div>
-                    <div class="sub-section scandal-objects-container"></div>
+                    <div class="sub-section top5-container">
+                        <div class="row">
+                            <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-container">
+                                    <div class="sub-header__button-box">
+                                        <a href="#" class="sub-header__button">Всі публікації</a>
+                                    </div>
+                                    <h2 class="sub-header">Топ 5</h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="row top5-container-row">
+                            <div class="top5-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail top5">
+                                    <img src="http://placehold.it/264x177" alt="top5_picture1" class="top5__img">
+                                    <div class="label label-success top5__label">Топ 5</div>
+                                    <div class="caption top5__caption">
+                                        <h3 class="top5__caption-header">На Прикарпатті продовжують видавати
+                                            &#34;теплі кредити&#34;. <br>Інфографіка</h3>
+                                        <div class="top5__description">
+                                            <span class="top5__description-wrapper">
+                                                <p>
+                                                    На офіційному веб-сайті Держенергоефективності запрацювала Інтерактивна карта міцевих програм відшкодування відсотків за &#171;теплими&#187;
+                                                </p>
+                                            </span>
+                                            <a href="#" class="top5__description-read-more"></a>
+                                        </div>
+                                        <div class="top5__footer">
+                                            <div class="top5__date">
+                                                25/06/2016 14:30
+                                            </div>
+                                            <div class="top5__comment">
+                                                <span>5</span>
+                                            </div>
+                                            <span class="top5__share-btn">
+                                                <ul class="share-btns">
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top5-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail top5">
+                                    <img src="http://placehold.it/264x177" alt="top5_picture1" class="top5__img">
+                                    <div class="label label-success top5__label">Топ 5</div>
+                                    <div class="caption top5__caption">
+                                        <h3 class="top5__caption-header">На Прикарпатті продовжують видавати
+                                            &#34;теплі кредити&#34;. <br>Інфографіка</h3>
+                                        <div class="top5__description">
+                                            <span class="top5__description-wrapper">
+                                                <p>
+                                                    На офіційному веб-сайті Держенергоефективності запрацювала Інтерактивна карта міцевих програм відшкодування відсотків за &#171;теплими&#187;
+                                                </p>
+                                            </span>
+                                            <a href="#" class="top5__description-read-more"></a>
+                                        </div>
+                                        <div class="top5__footer">
+                                            <div class="top5__date">
+                                                25/06/2016 14:30
+                                            </div>
+                                            <div class="top5__comment">
+                                                <span>5</span>
+                                            </div>
+                                            <span class="top5__share-btn">
+                                                <ul class="share-btns">
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top5-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail top5">
+                                    <img src="http://placehold.it/264x177" alt="top5_picture1" class="top5__img">
+                                    <div class="label label-success top5__label">Топ 5</div>
+                                    <div class="caption top5__caption">
+                                        <h3 class="top5__caption-header">На Прикарпатті продовжують видавати
+                                            &#34;теплі кредити&#34;. <br>Інфографіка</h3>
+                                        <div class="top5__description">
+                                            <span class="top5__description-wrapper">
+                                                <p>
+                                                    На офіційному веб-сайті Держенергоефективності запрацювала Інтерактивна карта міцевих програм відшкодування відсотків за &#171;теплими&#187;
+                                                </p>
+                                            </span>
+                                            <a href="#" class="top5__description-read-more"></a>
+                                        </div>
+                                        <div class="top5__footer">
+                                            <div class="top5__date">
+                                                25/06/2016 14:30
+                                            </div>
+                                            <div class="top5__comment">
+                                                <span>5</span>
+                                            </div>
+                                            <span class="top5__share-btn">
+                                                <ul class="share-btns">
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>1</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>3</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>4</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>5</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>6</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="share-btns__item">
+                                                        <a href="#" class="share-btns__link">
+                                                            <span>7</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section promotions-container">
+                        <div class="row">
+                            <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-container">
+                                    <h2 class="sub-header">Акції</h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="promotion-slider-container">
+                            <a href="#" class="promotion-slider__detailed">Всі акції</a>
+                            <ul class="promotion-slider">
+                                <li class="promotion-slider__item">
+                                    <div class="promotion-slider__img-container">
+                                        <img src="http://placehold.it/373x250" alt="slide picture 1">
+                                    </div>
+                                    <div class="promotion-slider__text-container">
+                                        <div class="promotion-slider__caption">
+                                            <h3 class="promotion-slider__title">Доступне житло від БК "Мельник"</h3>
+                                            <div class="promotion-slider__description-box">
+                                                <a href="#" class="promotion-slider__description-detailed"></a>
+                                                <div class="promotion-slider_description-text">
+                                                    <p>
+                                                        На офіційному веб-сайті Держенергоефективності запрацювала
+                                                        Інтерактивна карта місцевих програм відшкодування відсотків за
+                                                        «теплими»
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotion-slider__item">
+                                    <div class="promotion-slider__img-container">
+                                        <img src="http://placehold.it/373x250" alt="slide picture 1">
+                                    </div>
+                                    <div class="promotion-slider__text-container">
+                                        <div class="promotion-slider__caption">
+                                            <h3 class="promotion-slider__title">Доступне житло від БК "Мельник"</h3>
+                                            <div class="promotion-slider__description-box">
+                                                <a href="#" class="promotion-slider__description-detailed"></a>
+                                                <div class="promotion-slider_description-text">
+                                                    <p>
+                                                        На офіційному веб-сайті Держенергоефективності запрацювала
+                                                        Інтерактивна карта місцевих програм відшкодування відсотків за
+                                                        «теплими»
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="promotion-slider__item">
+                                    <div class="promotion-slider__img-container">
+                                        <img src="http://placehold.it/373x250" alt="slide picture 1">
+                                    </div>
+                                    <div class="promotion-slider__text-container">
+                                        <div class="promotion-slider__caption">
+                                            <h3 class="promotion-slider__title">Доступне житло від БК "Мельник"</h3>
+                                            <div class="promotion-slider__description-box">
+                                                <a href="#" class="promotion-slider__description-detailed"></a>
+                                                <div class="promotion-slider_description-text">
+                                                    <p>
+                                                        На офіційному веб-сайті Держенергоефективності запрацювала
+                                                        Інтерактивна карта місцевих програм відшкодування відсотків за
+                                                        «теплими»
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-section scandal-objects-container">
+                        <div class="row">
+                            <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="header-container">
+                                    <div class="sub-header__button-box">
+                                        <a href="#" class="sub-header__button">Всі об'єкти</a>
+                                    </div>
+                                    <h2 class="sub-header">Скандальні об'єкти</h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="row scandal-container-row">
+                            <div class="scandal-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail scandal">
+                                    <img src="http://placehold.it/264x230" alt="scandal_picture1" class="scandal__img">
+                                    <div class="label label-danger scandal__label">Скандальні</div>
+                                    <div class="caption scandal__caption">
+                                        <div class="scandal__caption-text">
+                                            <p>
+                                                вул. Макогонна, 23а
+                                            </p>
+                                        </div>
+                                        <div class="scandal__caption-empty">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top5-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail scandal">
+                                    <img src="http://placehold.it/264x230" alt="scandal_picture1" class="scandal__img">
+                                    <div class="label label-danger scandal__label">Скандальні</div>
+                                    <div class="caption scandal__caption">
+                                        <div class="scandal__caption-text">
+                                            <p>
+                                                вул. Довга, 18б
+                                            </p>
+                                        </div>
+                                        <div class="scandal__caption-empty">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top5-container-col col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="thumbnail scandal">
+                                    <img src="http://placehold.it/264x230" alt="scandal_picture1" class="scandal__img">
+                                    <div class="label label-danger scandal__label">Скандальні</div>
+                                    <div class="caption scandal__caption">
+                                        <div class="scandal__caption-text">
+                                            <p>
+                                                вул. Пісічна, 39 (41)
+                                            </p>
+                                        </div>
+                                        <div class="scandal__caption-empty">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rightside-content-column col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+                <div class="rightside-content-column col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="last-news-widget sidebar-widget">
+                                <div class="last-news">
+                                    <div class="last-news__header">
+                                        <div class="last-news_header-text">Останні новини</div>
+                                    </div>
+                                    <ul class="last-news__list">
+                                        <li class="last-news__item last-news__delim">
+                                            <div class="last-news__delim-text">06/09/2016</div>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">13:41</div>
+                                                <div class="last-news__text">
+                                                    Знайомимось з історичними будівлями Івано-Франківська. Залізничний
+                                                    вокзал 1866р.
+                                                    Дуже цікаво переглянути історію
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item last-news__delim">
+                                            <div class="last-news__delim-text">06/09/2016</div>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">13:41</div>
+                                                <div class="last-news__text">
+                                                    Знайомимось з історичними будівлями Івано-Франківська. Залізничний
+                                                    вокзал 1866р.
+                                                    Дуже цікаво переглянути історію
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item last-news__delim">
+                                            <div class="last-news__delim-text">06/09/2016</div>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">13:41</div>
+                                                <div class="last-news__text">
+                                                    Знайомимось з історичними будівлями Івано-Франківська. Залізничний
+                                                    вокзал 1866р.
+                                                    Дуже цікаво переглянути історію
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last-news__item clearfix">
+                                            <a href="#" class="last-news_news-item">
+                                                <div class="last-news__date">16:45</div>
+                                                <div class="last-news__text">
+                                                    У Франківську столітній будинок руйнується, а в комунальників немає
+                                                    грошей на ремонт
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="last-news__show-all-button-container">
+                                        <a href="#" class="last-news__show-all-button">Всі новини</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="top-advertising-widget sidebar-widget">
+                                <p>
+                                    <a href="#">
+                                        <img src="http://placehold.it/262x150&text=Тут може бути ваша реклама
+                                        262PXx150PX"
+                                             alt="small advertising block1">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+                            <div class="month-top-company-widget sidebar-widget">
+                                <div class="panel panel-default month-top-company">
+                                    <div class="panel-heading month-top-company__heading">
+                                        <h3 class="panel-title month-top-company__title">Компанія місяця</h3>
+                                    </div>
+                                    <div class="panel-body month-top-company__body">
+                                        <a href="#" class="month-top-company__link">
+                                            <img src="http://placehold.it/160x105" alt="top company logo"
+                                                 class="month-top-company__image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6">
+                            <div class="top-companies-widget sidebar-widget">
+                                <div class="panel panel-default top-companies">
+                                    <div class="panel-heading top-companies__heading">
+                                        <h3 class="panel-title top-companies__title">Топ компаній</h3>
+                                    </div>
+                                    <div class="panel-body top-companies__body">
+                                        <ul class="top-companies__list">
+                                            <li class="top-companies__list-item">
+                                                <a href="#">
+                                                    <div class="row top-companies__list-row">
+                                                        <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img src="http://placehold.it/60x40"
+                                                                 alt="top company logo 1"
+                                                                 class="img-responsive top-companies__list-logo">
+                                                        </div>
+                                                        <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <h4 class="top-companies__list-header">РІЕЛ</h4>
+                                                            <div class="top-companies__list-rating">
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="top-companies__list-item">
+                                                <a href="#">
+                                                    <div class="row top-companies__list-row">
+                                                        <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img src="http://placehold.it/60x40"
+                                                                 alt="top company logo 2"
+                                                                 class="img-responsive top-companies__list-logo">
+                                                        </div>
+                                                        <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <h4 class="top-companies__list-header">Спілка
+                                                                забудівників</h4>
+                                                            <div class="top-companies__list-rating">
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="top-companies__list-item">
+                                                <a href="#">
+                                                    <div class="row top-companies__list-row">
+                                                        <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img src="http://placehold.it/60x40"
+                                                                 alt="top company logo 3"
+                                                                 class="img-responsive top-companies__list-logo">
+                                                        </div>
+                                                        <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <h4 class="top-companies__list-header">Благо</h4>
+                                                            <div class="top-companies__list-rating">
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="top-companies__list-item">
+                                                <a href="#">
+                                                    <div class="row top-companies__list-row">
+                                                        <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img src="http://placehold.it/60x40"
+                                                                 alt="top company logo 4"
+                                                                 class="img-responsive top-companies__list-logo">
+                                                        </div>
+                                                        <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <h4 class="top-companies__list-header">Вамбуд</h4>
+                                                            <div class="top-companies__list-rating">
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="top-companies__list-item">
+                                                <a href="#">
+                                                    <div class="row top-companies__list-row">
+                                                        <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <img src="http://placehold.it/60x40"
+                                                                 alt="top company logo 5"
+                                                                 class="img-responsive top-companies__list-logo">
+                                                        </div>
+                                                        <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                            <h4 class="top-companies__list-header">КРЕАТОР</h4>
+                                                            <div class="top-companies__list-rating">
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                                <i class="glyphicon glyphicon-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid-advertising-widget sidebar-widget">
+                        <p>
+                            <a href="#">
+                                <img src="http://placehold.it/262x270&text=Тут може бути ваша реклама
+                                        262PXx270PX"
+                                     alt="small advertising block2">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="top-objects-widget sidebar-widget">
+                        <div class="panel panel-default top-objects">
+                            <div class="panel-heading top-companies__heading">
+                                <h3 class="panel-title top-companies__title">Топ компаній</h3>
+                            </div>
+                            <div class="panel-body top-companies__body">
+                                <ul class="top-companies__list">
+                                    <li class="top-companies__list-item">
+                                        <a href="#">
+                                            <div class="row top-companies__list-row">
+                                                <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <img src="http://placehold.it/60x40" alt="top company logo 1"
+                                                         class="img-responsive top-companies__list-logo">
+                                                </div>
+                                                <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <h4 class="top-companies__list-header">РІЕЛ</h4>
+                                                    <div class="top-companies__list-rating">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="top-companies__list-item">
+                                        <a href="#">
+                                            <div class="row top-companies__list-row">
+                                                <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <img src="http://placehold.it/60x40" alt="top company logo 2"
+                                                         class="img-responsive top-companies__list-logo">
+                                                </div>
+                                                <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <h4 class="top-companies__list-header">Спілка забудівників</h4>
+                                                    <div class="top-companies__list-rating">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="top-companies__list-item">
+                                        <a href="#">
+                                            <div class="row top-companies__list-row">
+                                                <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <img src="http://placehold.it/60x40" alt="top company logo 3"
+                                                         class="img-responsive top-companies__list-logo">
+                                                </div>
+                                                <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <h4 class="top-companies__list-header">Благо</h4>
+                                                    <div class="top-companies__list-rating">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="top-companies__list-item">
+                                        <a href="#">
+                                            <div class="row top-companies__list-row">
+                                                <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <img src="http://placehold.it/60x40" alt="top company logo 4"
+                                                         class="img-responsive top-companies__list-logo">
+                                                </div>
+                                                <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <h4 class="top-companies__list-header">Вамбуд</h4>
+                                                    <div class="top-companies__list-rating">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="top-companies__list-item">
+                                        <a href="#">
+                                            <div class="row top-companies__list-row">
+                                                <div class="top-companies__list-logo-col col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <img src="http://placehold.it/60x40" alt="top company logo 5"
+                                                         class="img-responsive top-companies__list-logo">
+                                                </div>
+                                                <div class="top-companies__list-text-col col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <h4 class="top-companies__list-header">КРЕАТОР</h4>
+                                                    <div class="top-companies__list-rating">
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                        <i class="glyphicon glyphicon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register-widget sidebar-widget">
+                        <div class="panel panel-default register">
+                            <div class="panel-heading register__heading">
+                                <h3 class="panel-title register__title">Додати свою компанію</h3>
+                            </div>
+                            <div class="panel-body register__body">
+                                <div class="register-description col-lg-12 col-md-12 col-sm-6 col-xs-2">
+                                    Тут ви можете додати свою компанію у список будівельних компнаній міста Львів
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-2">
+                                    <a href="#" class="btn btn-success register__btn">Додати</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-advertising-widget sidebar-widget">
+                        <p>
+                            <a href="#">
+                                <img src="http://placehold.it/262x280&text=Тут може бути ваша реклама
+                                        262PXx280PX"
+                                     alt="small advertising block3">
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </section>
 <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+        <div class="row">
+            <div class="footer__dev-text-container col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="footer__dev-text">
+                    Розроблено
+                    <a href="#" class="footer__catchup-logo"></a>
+                </div>
+            </div>
+            <div class="center-block footer__copyright col-lg-4 col-md-4 col-sm-4 col-xs-4">&copy 2016 Побудовано у
+                Львові. Всі права захищено.
+            </div>
+            <div class="footer__nav-socials-container col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">facebook</a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">vkontakte</a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">twitter</a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link">google plus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/vendor.min.js"></script>
