@@ -53,7 +53,9 @@ gulp.task("vendor-js", function(){
     return gulp.src([
         "src/vendor/bootstrap/dist/js/bootstrap.js",
         "src/vendor/jGrowl/jquery.jgrowl.js",
-        "src/vendor/scrollup/dist/jquery.scrollUp.js"
+        "src/vendor/scrollup/dist/jquery.scrollUp.js",
+        "src/vendor/bxslider/*.js",
+        "src/vendor/goodshare.js-master/goodshare.js"
     ])
         .pipe(addSrc.prepend("src/vendor/jquery/dist/jquery.js"))
         .pipe(concat("vendor.min.js"))

@@ -1,5 +1,4 @@
-/*
-var map = new google.maps.Map(document.getElementById('map'), {
+/*var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
     center: new google.maps.LatLng(49.5558900, 25.6055600),
     mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -21,10 +20,8 @@ xhr.onreadystatechange = function () {
             companies[i] = [data[i].id, data[i].status, data[i].logoSrc, mapCode, data[i].name];
     }
     var images = [
-        { url: '/icons/in-project-map-marker-small.png' },
-        { url: '/icons/in-progress-map-marker-small.png' },
-        { url: '/icons/done-building-map-marker-small.png' },
-        { url: '/icons/scandal-map-marker-small.png' }
+        {url: '/images/in-progress-map-marker-small.png'},
+        {url: '/images/done-building-map-marker-small.png'}
     ];
     var markers = [];
     var infoWindows = [];
@@ -60,3 +57,47 @@ xhr.onreadystatechange = function () {
         infoModel[i] = [marker, infowindow];
     }
 };*/
+
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var myCenter = new google.maps.LatLng(49.5512725,25.6156704);
+    var mapOptions = {center: myCenter, zoom: 17};
+    var map = new google.maps.Map(mapCanvas,mapOptions);
+    var marker = new google.maps.Marker({
+        position: myCenter,
+        animation: google.maps.Animation.BOUNCE
+    });
+    marker.setMap(map);
+}
+
+$(document).ready(function () {
+    $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager',
+        controls: false,
+        auto: true,
+        autoHover: true
+    });
+});
+
+$(document).ready(function () {
+    $('.slider-news_shares, .publication__share-btn').mouseover(
+        function () {
+            $('.sharebtns--top').css('transition', 'opacity', '0.5s')
+        },
+        function () {
+            $('.sharebtns--top').css('opacity', '1')
+        },
+        function () {
+            $('.sharebtns--top').css('visibility', 'visible')
+        });
+    $('.slider-news_shares, .publication__share-btn').mouseout(
+        function () {
+            $('.sharebtns--top').css('transition', 'opacity', '0.5s')
+        },
+        function () {
+            $('.sharebtns--top').css('opacity', '0')
+        },
+        function () {
+            $('.sharebtns--top').css('visibility', 'hidden')
+        })
+});
