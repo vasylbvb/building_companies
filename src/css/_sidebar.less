@@ -292,12 +292,12 @@
   background: @main-green-color;
   color: #ffffff;
   padding: 8px 20px 8px 40px;
-  border: solid 1px @main-green-color;
+  border: solid 3px #ffffff;
   border-radius: 50px;
   font-family: "Roboto-Medium";
   font-size: 18px;
   font-weight: lighter;
-  transition: background, color 0.3s;
+  transition: background, border-color, color 0.3s;
   position: relative;
   > span {
     position: absolute;
@@ -307,6 +307,7 @@
     font-size: 14px;
   }
   &:hover {
+    border-color: @main-green-color;
     background: #ffffff;
     color: @main-green-color;
     text-decoration: none;

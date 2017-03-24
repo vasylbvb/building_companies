@@ -557,19 +557,19 @@ div[class^="slidepart__"] {
       list-style: none;
       color: @main-green-color;
       font-size: 18px;
-      unicode-bidi: bidi-override;
-      direction: rtl;
       text-align: left;
+      //unicode-bidi: bidi-override;
+      //direction: rtl;
       & > span {
         display: inline-block;
         position: relative;
         width: 1.1em;
         height: 1.1em;
-        &:before {
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
+        //&:before {
+        //  position: absolute;
+        //  top: 0;
+        //  left: 0;
+        //}
       }
     }
     &:hover {
@@ -578,13 +578,13 @@ div[class^="slidepart__"] {
   }
 }
 
-.rating-stars > span:hover:before,
-.rating-stars > span:hover ~ span:before {
-  content: '\2605';
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+//.rating-stars > span:hover:before,
+//.rating-stars > span:hover ~ span:before {
+//  content: '\2605';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//}
 
 .checked-objects__button-box {
   position: absolute;
@@ -601,7 +601,7 @@ div[class^="slidepart__"] {
     border-radius: 50px;
     transition: border-color, color, background 0.3s;
     font-family: "Roboto-Medium";
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     &:hover {
       color: #ffffff;
@@ -629,7 +629,8 @@ div[class^="slidepart__"] {
     border: solid 1px #626262;
     border-radius: 50%;
     &:active,
-    &:focus {
+    &:focus,
+    &.active {
       background: #626262;
     }
   }
@@ -819,7 +820,7 @@ div[class^="slidepart__"] {
   color: #ffffff;
   padding: 2px 18px;
   border-radius: 50px;
-  font-size: 10px;
+  font-size: 12px;
   transition: border-color, color, background 0.3s;
   position: absolute;
   bottom: 15px;
@@ -850,7 +851,8 @@ div[class^="slidepart__"] {
     border: solid 1px #ffffff;
     border-radius: 50%;
     &:active,
-    &:focus {
+    &:focus,
+    &.active {
       background: #ffffff;
     }
   }

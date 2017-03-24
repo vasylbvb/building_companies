@@ -17,13 +17,32 @@ body {
   min-width: 100%;
   font-family: "Roboto-Regular", sans-serif;
 }
-
+@media (max-width: 790px) {
+  .btn-we-checked {
+    float: none;
+  }
+}
 @media (max-width: 760px) {
   .nav-search-container {
     border-left: 0;
   }
+  .global-header__secondline,
+  .main-nav,
+  .main-nav > .container,
+  .main-nav__navbar-header{
+    min-height: 1px;
+  }
+  .main-nav__navbar-header {
+    margin: 0 !important;
+  }
+  .main-nav__item {
+    padding-right: 0;
+  }
   .slidepart__right > h3 {
     margin-top: 30px;
+  }
+  .slider-news__articles-box {
+    display: none;
   }
   .slider-news__caption {
     font-size: 18px;
@@ -44,6 +63,31 @@ body {
   .promotion-slider__detailed {
     right: 70%;
   }
+  .sub-header__button,
+  .last-news__show-all-button {
+    font-size: 12px !important;
+  }
+  .slidepart__left-title{
+    padding-left: 10px;
+  }
+  .slidepart__left-title > h3 {
+    font-size: 22px;
+  }
+  .slidepart__left-title > h3:after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 100px;
+    top: 30px;
+  }
+  .slidepart__right >h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .checked-objects__button-box {
+    bottom: 40px;
+  }
   .monthly-top-company-main-col,
   .top-companies-main-col,
   .top-companies__list-logo-col,
@@ -53,5 +97,15 @@ body {
   }
   .socials__item {
     display: block !important;
+  }
+  .publication,
+  .top5 {
+    margin: 0 auto 5px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo-box {
+    width: 90%;
   }
 }

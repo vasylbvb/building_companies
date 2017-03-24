@@ -31,7 +31,8 @@
 }
 
 .logo-box {
-  width: 315px;
+  max-width: 315px;
+  width: 100%;
   height: 22px;
   position: absolute;
   top: 50%;
@@ -183,16 +184,16 @@
   margin: 0;
   border: 0;
   padding: 0;
-  width: 50px;
+  width: 50%;
   height: 50px;
   .navbtn {
-    margin: 0;
+    margin: 5px 10px 5px 0;
     padding: 0;
     background: transparent;
     border: solid 2px #ffffff;
     border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: relative;
     & > span {
       display: inline-block;
@@ -238,15 +239,19 @@
 .main-nav__navbar-header {
   min-height: 70px;
   width: 100%;
+  margin: 0;
 }
 
 #main-nav {
   min-height: 70px;
   padding: 10px 0;
   background: transparent;
-  text-align: left;
+  text-align: center;
 }
-
+.main-nav__nav {
+  max-width: 100%;
+  margin: 0;
+}
 .main-nav__item {
   min-width: 70px;
   padding-right: 25px;
@@ -292,6 +297,7 @@
   font-size: 16px;
   font-family: "Roboto-Medium";
   letter-spacing: -0.5px;
+  float: right;
   & > span {
     position: absolute;
     width: 16px;
