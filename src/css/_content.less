@@ -1,6 +1,9 @@
 @import "_vars";
 @import "_fonts";
 
+.content-wrapper {
+  padding-bottom: 80px;
+}
 .main-upperside {
   max-height: 130px;
   margin-bottom: 30px;
@@ -387,7 +390,7 @@
         min-height: 390px;
         margin: 0;
         padding: 0;
-        min-width: 264px;
+        max-width: 264px;
         border-color: #f4f4f4;
         background: #f4f4f4;
         color: #404040;
@@ -400,7 +403,7 @@
         }
         & > .publication__img {
           width: 100%;
-          min-height: 177px;
+          max-height: 177px;
         }
         & > .publication__label {
           position: absolute;
@@ -413,7 +416,7 @@
           border-radius: 25px;
         }
         & > .publication__caption {
-          min-width: 264px;
+          max-width: 264px;
           max-height: 213px;
           padding: 25px 15px 15px;
           color: inherit;
@@ -648,7 +651,7 @@ div[class^="slidepart__"] {
         min-height: 390px;
         margin: 0;
         padding: 0;
-        min-width: 264px;
+        max-width: 264px;
         border-color: #f4f4f4;
         background: #f4f4f4;
         color: #404040;
@@ -661,7 +664,7 @@ div[class^="slidepart__"] {
         }
         & > .top5__img {
           width: 100%;
-          min-height: 177px;
+          max-height: 177px;
         }
         & > .top5__label {
           position: absolute;
@@ -674,7 +677,7 @@ div[class^="slidepart__"] {
           border-radius: 25px;
         }
         & > .top5__caption {
-          min-width: 264px;
+          max-width: 264px;
           max-height: 213px;
           padding: 25px 15px 15px;
           color: inherit;
@@ -853,3 +856,64 @@ div[class^="slidepart__"] {
   }
 }
 
+//scandalous container
+.scandal-objects-container {
+  min-height: 300px;
+  margin-bottom: 30px;
+}
+.scandal-container-row {
+  min-height: 230px;
+}
+.scandal-container-col {
+  height: 230px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.scandal-object {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  max-width: 264px;
+  overflow: hidden;
+
+  & > .scandal__img {
+    height: 100%;
+  }
+  & > .scandal__label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 13px;
+    border-radius: 25px;
+    font-weight: lighter;
+    padding: 5px 7px;
+    letter-spacing: 0.4px;
+  }
+  & > .scandal-object__text {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Roboto-Medium";
+    z-index: 2;
+  }
+  &:before {
+    height: 60px;
+    width: 100%;
+  }
+  &:after {
+    height: 90px;
+    left: 40px;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: @main-green-color;
+    opacity: 0.4;
+  }
+}

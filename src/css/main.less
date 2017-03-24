@@ -2,6 +2,8 @@
 @import "_fonts";
 @import "_header";
 @import "_content";
+@import "_sidebar";
+@import "_footer";
 
 * {
   box-sizing: border-box;
@@ -33,6 +35,7 @@ body {
   }
   .promotion-slider__img-container {
     float: none;
+    max-width: none;
   }
   .promotion-slider__text-container {
     margin-left: 0;
@@ -40,5 +43,15 @@ body {
   }
   .promotion-slider__detailed {
     right: 70%;
+  }
+  .monthly-top-company-main-col,
+  .top-companies-main-col,
+  .top-companies__list-logo-col,
+  .top-companies__list-text-col {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .socials__item {
+    display: block !important;
   }
 }
