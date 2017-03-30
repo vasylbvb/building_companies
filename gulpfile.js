@@ -31,7 +31,8 @@ gulp.task("vendor-css", function(){
         "src/vendor/bootstrap/dist/css/bootstrap.css",
         "src/vendor/jGrowl/jquery.jgrowl.css",
         "src/vendor/normalize-css/normalize.css",
-        "src/vendor/font-awesome/css/font-awesome.css"
+        "src/vendor/font-awesome/css/font-awesome.css",
+        "src/vendor/bootstrap-star-rating/css/star-rating.css"
     ])
         .pipe(concat("bootstrap.css"))
         .pipe(nano())
@@ -52,10 +53,13 @@ gulp.task("css:all", ["css", "vendor-css"]);
 gulp.task("vendor-js", function(){
     return gulp.src([
         "src/vendor/bootstrap/dist/js/bootstrap.js",
+        "src/vendor/responsive-paginate.js",
         "src/vendor/jGrowl/jquery.jgrowl.js",
         "src/vendor/scrollup/dist/jquery.scrollUp.js",
         "src/vendor/bxslider/*.js",
-        "src/vendor/goodshare.js-master/goodshare.js"
+        "src/vendor/goodshare.js-master/goodshare.js",
+        "src/vendor/bootstrap-star-rating/js/star-rating.js",
+        "src/vendor/bootstrap-star-rating/js/star-rating_locale_ua.js"
     ])
         .pipe(addSrc.prepend("src/vendor/jquery/dist/jquery.js"))
         .pipe(concat("vendor.min.js"))
@@ -64,7 +68,7 @@ gulp.task("vendor-js", function(){
 });
 
 gulp.task("app-js", function(){
-    return gulp.src("src/js/main.js")
+    return gulp.src("src/js/*.js")
         .pipe(uglify())
         .pipe(concat("app.min.js"))
         .pipe(gulp.dest("dist/js"));

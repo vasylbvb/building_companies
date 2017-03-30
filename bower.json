@@ -26,6 +26,7 @@
     "font-awesome": "^4.7.0",
     "requirejs": "^2.3.3",
     "jGrowl": "jgrowl#^1.4.6",
-    "scrollup": "^2.4.1"
+    "scrollup": "^2.4.1",
+    "bootstrap-star-rating": "^4.0.1"
   }
 }

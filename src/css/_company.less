@@ -1,0 +1,208 @@
+@import "_vars";
+@import "_fonts";
+
+.company-header-container {
+  margin-bottom: 15px;
+}
+
+.object-header {
+  font-size: 36px;
+  margin: 0;
+  text-align: justify;
+  position: relative;
+  & > .object-header__text {
+    display: inline-block;
+    font-size: 36px;
+    color: @main-green-color;
+    font-family: "Roboto-Bold";
+    padding-right: 180px;
+  }
+  & > .object-header__rating {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    height: 100%;
+    color: #ffd800;
+  }
+}
+
+.rating-container .rating {
+  font-size: 24px;
+}
+
+.rating-container .rating .filled-stars,
+.rating-container .rating .empty-stars {
+  color: #ffd800;
+  text-shadow: none !important;
+  -webkit-text-stroke-color: #ffd800;
+}
+
+.company-information {
+  height: 180px;
+  & > .company-info__col {
+    height: 100%;
+    & > .company-info__img {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      & > .company-info__pic {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+
+.object-address {
+  height: 100%;
+  margin: 0;
+  padding: 20px 30px;
+  list-style: none;
+  background: @main-green-color;
+  color: #ffffff;
+  font-family: "Roboto-Light";
+  font-size: 16px;
+  & > .object-address__item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+    line-height: 1;
+  }
+  & > .object-address__item:first-child {
+    margin: 0;
+  }
+}
+
+.company-description-container {
+  margin: 40px 0 0;
+}
+
+.company-description__paragraph {
+  margin-bottom: 28px;
+  font-size: 16px;
+  color: #515151;
+}
+
+.company-description > .company-description__paragraph:last-child {
+  margin-bottom: 75px;
+}
+
+.entity-gallery {
+  padding: 20px;
+  background: #ffffff !important;
+  & > .entity-gallery__header {
+    text-align: center;
+    margin: 0 0 30px;
+    position: relative;
+    & > .entity-gallery__title {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      padding: 0 10px;
+      font-size: 26px;
+      background: #ffffff;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 50%;
+      background: @main-green-color;
+    }
+  }
+  & > .entity-gallery__wrapper {
+    padding: 0 40px;
+    position: relative;
+  }
+}
+
+.company-objects__item {
+  width: 165px;
+  height: 210px;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover .company-objects__item-footer {
+    background: #ffffff;
+    color: @main-green-color;
+  }
+  > .company-objects__item-top {
+    width: 100%;
+    height: 165px;
+    position: relative;
+    background: url("../images/building_brown_stripe.jpg") no-repeat 25% 0;
+    & > .company-objects__item-img {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    & > .company-objects__item-label {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 12px;
+      font-weight: lighter;
+      letter-spacing: 0.15px;
+      border-radius: 25px;
+      padding: 5px 5px;
+    }
+    & > .company-objects__item-rating {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: #ffd800;
+    }
+  }
+  >.company-objects__item-footer {
+    width: 100%;
+    height: 45px;
+    background: @main-green-color;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto-Medium";
+    line-height: 10px;
+    padding: 7px 0;
+    transition: background, color 0.3s;
+    &:after {
+      display: inline-block;
+      content: '';
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+#gallery-control__prev,
+#gallery-control__next {
+  position: absolute;
+  top: 50%;
+  width: 33px;
+  height: 59px;
+  margin-top: -30px;
+}
+#gallery-control__prev {
+  background: url("../images/last_objects_control_prev.png") no-repeat 100%;
+  left: 0;
+  > .bx-prev {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+}
+#gallery-control__next {
+  background: url("../images/last_objects_control_next.png") no-repeat 100%;
+  right: 0;
+  > .bx-next {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+}

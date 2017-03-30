@@ -4,6 +4,10 @@
 @import "_content";
 @import "_sidebar";
 @import "_footer";
+@import "_company-list";
+@import "_company";
+@import "_news";
+@import "_mediaqueries";
 
 * {
   box-sizing: border-box;
@@ -17,95 +21,40 @@ body {
   min-width: 100%;
   font-family: "Roboto-Regular", sans-serif;
 }
-@media (max-width: 790px) {
-  .btn-we-checked {
-    float: none;
-  }
+
+.separate-section {
+  margin-bottom: 15px;
 }
-@media (max-width: 760px) {
-  .nav-search-container {
-    border-left: 0;
-  }
-  .global-header__secondline,
-  .main-nav,
-  .main-nav > .container,
-  .main-nav__navbar-header{
-    min-height: 1px;
-  }
-  .main-nav__navbar-header {
-    margin: 0 !important;
-  }
-  .main-nav__item {
-    padding-right: 0;
-  }
-  .slidepart__right > h3 {
-    margin-top: 30px;
-  }
-  .slider-news__articles-box {
-    display: none;
-  }
-  .slider-news__caption {
-    font-size: 18px;
-  }
-  .checked-objects-pager-box,
-  .promotions-pager-box {
-    bottom: 5px;
-    right: 5px;
-  }
-  .promotion-slider__img-container {
-    float: none;
-    max-width: none;
-  }
-  .promotion-slider__text-container {
-    margin-left: 0;
-    padding-left: 10px;
-  }
-  .promotion-slider__detailed {
-    right: 70%;
-  }
-  .sub-header__button,
-  .last-news__show-all-button {
-    font-size: 12px !important;
-  }
-  .slidepart__left-title{
-    padding-left: 10px;
-  }
-  .slidepart__left-title > h3 {
-    font-size: 22px;
-  }
-  .slidepart__left-title > h3:after {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 130px;
-    height: 100px;
-    top: 30px;
-  }
-  .slidepart__right >h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 22px;
-  }
-  .checked-objects__button-box {
-    bottom: 40px;
-  }
-  .monthly-top-company-main-col,
-  .top-companies-main-col,
-  .top-companies__list-logo-col,
-  .top-companies__list-text-col {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .socials__item {
-    display: block !important;
-  }
-  .publication,
-  .top5 {
-    margin: 0 auto 5px !important;
+
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: 0;
+  line-height: 1;
+  > li:last-child:before {
+    padding: 0;
+    content: '//';
   }
 }
 
-@media (max-width: 350px) {
-  .logo-box {
-    width: 90%;
+#expanded li:nth-last-child(2):before {
+  padding: 0;
+  content: '//';
+}
+
+.breadcrumb-item {
+  font-size: 10px;
+}
+
+#breadcrumb-item__active {
+  color: @main-green-color;
+}
+
+.breadcrumb-link {
+  color: #888888;
+  &:hover {
+    color: #777777;
+    font-weight: bold;
   }
 }
