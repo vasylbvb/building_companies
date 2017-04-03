@@ -112,6 +112,16 @@ $(document).ready(function () {
         nextText: ''
 
     });
+    $('.plan-department__gallery').bxSlider({
+        maxSlides: 1,
+        pagerCustom: '.separate-objects-galleries__plan-pager-box',
+        controls: false
+    });
+    $('.stage-department__gallery').bxSlider({
+        maxSlides: 1,
+        pagerCustom: '.separate-objects-galleries__stage-pager-box',
+        controls: false
+    });
     $('.slider-news__article-wrapper').mouseover(
         function () {
             var links = [].slice.apply(document.querySelectorAll(".slider-news__article-wrapper"));
