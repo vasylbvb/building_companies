@@ -140,7 +140,10 @@ $(document).ready(function () {
                 });
         }
     );
-
+    $('.filter-objects-form__expand-btn').click(function(e){
+        e.preventDefault();
+        $('.filter-objects-form__fieldsets-container').toggle();
+    });
     //question
     $('.pagination').rPage();
     $('#input-id').rating();
