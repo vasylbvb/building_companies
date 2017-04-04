@@ -110,7 +110,6 @@ $(document).ready(function () {
         slideWidth: 165,
         prevText: '',
         nextText: ''
-
     });
     $('.plan-department__gallery').bxSlider({
         maxSlides: 1,
@@ -121,6 +120,21 @@ $(document).ready(function () {
         maxSlides: 1,
         pagerCustom: '.separate-objects-galleries__stage-pager-box',
         controls: false
+    });
+    $('.top-news-gallery__slideshow').bxSlider({
+        maxSlides: 5,
+        minSlides: 1,
+        slideMargin: 20,
+        pager: false,
+        auto: true,
+        autoHover: true,
+        moveSlides: 1,
+        slideWidth: 165,
+        captions: true,
+        prevSelector: '#gallery-control__prev',
+        nextSelector: '#gallery-control__next',
+        prevText: '',
+        nextText: ''
     });
     $('.slider-news__article-wrapper').mouseover(
         function () {
@@ -153,6 +167,18 @@ $(document).ready(function () {
     $('.filter-objects-form__expand-btn').click(function(e){
         e.preventDefault();
         $('.filter-objects-form__fieldsets-container').toggle();
+    });
+    $(function () {
+        $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '300', // Distance from top before showing element (px)
+            topSpeed: 300, // Speed back to top (ms)
+            animation: 'fade', // Fade, slide, none
+            animationInSpeed: 200, // Animation in speed (ms)
+            animationOutSpeed: 200, // Animation out speed (ms)
+            scrollText: 'Вверх', // Text for element
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
     });
     //question
     $('.pagination').rPage();

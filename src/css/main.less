@@ -9,6 +9,7 @@
 @import "_news";
 @import "_object-list";
 @import "_object";
+@import "_article";
 @import "_mediaqueries";
 
 * {
@@ -58,5 +59,27 @@ body {
   &:hover {
     color: #777777;
     font-weight: bold;
+  }
+}
+#scrollUp {
+  border: solid 1px @main-green-color;
+  border-radius: 5px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 10px;
+  font-family: "Roboto-Bold";
+  font-size: 16px;
+  background: @main-green-color;
+  color: #fff;
+  text-align: center;
+  transition: background, color 0.3s;
+  &:hover {
+    background: #ffffff;
+    color: @main-green-color;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
   }
 }
