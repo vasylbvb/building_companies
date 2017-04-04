@@ -69,10 +69,10 @@ function myMap() {
         position: myCenter,
         animation: google.maps.Animation.BOUNCE
     });
-    google.maps.event.addListener(map, 'mouseout', function(){
-        this.setOptions({scrollwheel:false});
+    google.maps.event.addListener(map, 'mouseout', function () {
+        this.setOptions({scrollwheel: false});
     });
-    map.addListener('click', function() {
+    map.addListener('click', function () {
         map.set('scrollwheel', true);
     });
     marker.setMap(map);
@@ -164,7 +164,7 @@ $(document).ready(function () {
                 });
         }
     );
-    $('.filter-objects-form__expand-btn').click(function(e){
+    $('.filter-objects-form__expand-btn').click(function (e) {
         e.preventDefault();
         $('.filter-objects-form__fieldsets-container').toggle();
     });
@@ -181,6 +181,109 @@ $(document).ready(function () {
         });
     });
     //question
-    $('.pagination').rPage();
+    $('#pagination').rPage();
     $('#input-id').rating();
+
+    var sliderRange = document.getElementById('slider-range-dual');
+    if (sliderRange) {
+        noUiSlider.create(sliderRange, {
+            start: [500, 2500],
+            range: {
+                'min': [0],
+                'max': [3000]
+            },
+            connect: [false, true, false],
+            margin: 1,
+            behaviour: 'tap-drag',
+        });
+        var inputSlider1 = document.querySelector('.filter-objects-form__price-from');
+        var inputSlider2 = document.querySelector('.filter-objects-form__price-to');
+
+        sliderRange.noUiSlider.on('update', function (values, handle) {
+            var value = values[handle];
+
+            if (handle) {
+                inputSlider2.value = value;
+            } else {
+                inputSlider1.value = value;
+            }
+        });
+        inputSlider1.addEventListener('change', function () {
+            sliderRange.noUiSlider.set([this.value, null]);
+        });
+        inputSlider2.addEventListener('change', function () {
+            sliderRange.noUiSlider.set([null, this.value]);
+        });
+    }
+
+    //for modal window
+    var addCompanyBtn = document.getElementById('addCompany-modal-button');
+
+    function addNewCompany() {
+        var parentFieldset = document.getElementById('addCompany_fieldset'),
+            formGroupEl = document.createElement('div'),
+            labelCol3 = document.createElement('label'),
+            divCol7 = document.createElement('div'),
+            divCol2 = document.createElement('div'),
+            selectVal = document.createElement('select'),
+            inpDivCol7 = document.createElement('input'),
+            aForRemove = document.createElement('a'),
+            iForRemove = document.createElement('i'),
+            companyArray = [
+                {
+                    text: 'Адреса',
+                    value: 0
+                },
+                {
+                    text: 'Телефон',
+                    value: 1
+                },
+                {
+                    text: 'Сторінка соціальної мережі',
+                    value: 2
+                },
+                {
+                    text: 'Мобільний',
+                    value: 3
+                },
+                {
+                    text: 'E-mail',
+                    value: 4
+                },
+                {
+                    text: 'Сайт',
+                    value: 5
+                }
+            ];
+
+        for (var i = 0; i < companyArray.length; i++) {
+            var curOption = document.createElement("option");
+            curOption.textContent = companyArray[i].text;
+            curOption.setAttribute('value', companyArray[i].value);
+            selectVal.appendChild(curOption);
+        }
+
+        formGroupEl.className = 'row form-froup';
+        parentFieldset.appendChild(formGroupEl);
+        labelCol3.className = 'col-xs-3';
+        divCol7.className = 'col-xs-7';
+        divCol2.className = 'col-xs-2';
+        formGroupEl.appendChild(labelCol3);
+        formGroupEl.appendChild(divCol7);
+        formGroupEl.appendChild(divCol2);
+        selectVal.className = 'form-control';
+        labelCol3.appendChild(selectVal);
+        inpDivCol7.setAttribute('type', 'text');
+        inpDivCol7.className = 'form-control';
+        divCol7.appendChild(inpDivCol7);
+        aForRemove.setAttribute('href', '#');
+        aForRemove.className = 'btn btn-danger';
+        divCol2.appendChild(aForRemove);
+        iForRemove.className = 'glyphicon glyphicon-trash';
+        aForRemove.appendChild(iForRemove);
+    };
+    addCompanyBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        return addNewCompany();
+    });
 });

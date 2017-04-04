@@ -83,3 +83,25 @@ body {
     text-decoration: none;
   }
 }
+.noUi-horizontal {
+  height: 5px;
+  margin: 20px 0;
+}
+.noUi-target {
+  background: #eeeeee;
+}
+.noUi-connect {
+  background: @main-green-color;
+}
+.noUi-horizontal .noUi-handle {
+  width: 20px;
+  height: 20px;
+  border: solid 5px @main-green-color;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+  &:before,
+  &:after {
+    display: none;
+  }
+}
